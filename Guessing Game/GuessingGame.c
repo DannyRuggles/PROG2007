@@ -2,6 +2,11 @@
 #include<stdlib.h>
 #include<time.h>
 
+/*
+Author: Danny Ruggles w0401169
+Date: 1/24/2023
+*/
+
 int main()
 {
     /*Declaration and initialization of the variables.
