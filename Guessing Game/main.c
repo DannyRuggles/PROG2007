@@ -4,6 +4,11 @@
 #include<string.h>
 #include<ctype.h>
 
+/*
+Author: Danny Ruggles w0401169
+Date: 1/24/2023
+*/
+
 
 /*char *toLower(char *str, size_t len)
 {
