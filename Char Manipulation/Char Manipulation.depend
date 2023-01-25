@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1674679156 source:c:\users\user\documents\school\2nd semester\prog2007\char manipulation\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+
