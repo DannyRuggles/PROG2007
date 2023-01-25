@@ -1,3 +1,8 @@
+/*
+Author: Danny Ruggle
+Title: Char Manipulation in C
+Date: 1/25/2023
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
