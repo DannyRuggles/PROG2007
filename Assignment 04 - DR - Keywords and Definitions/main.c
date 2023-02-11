@@ -1,13 +1,15 @@
-#include <stdio.h>
+#include <stdio.h> 
 #include <string.h>
 
 void clrscr() {
-    // Clear the screen using ANSI escape codes
+    //Clears screen using terminal commands
     system("cls");
 }
 
+//Data Types
 void datatypeKeywords() {
     int keywordChoice;
+    //Keywords list
     char *keywords[] = {
         "int",
         "float",
@@ -15,6 +17,7 @@ void datatypeKeywords() {
         "char",
         "void"
     };
+    //Definitions linked with keywords
     char *definitions[] = {
         "The int data type is used to store integer values (whole numbers) in the range of -32,768 to 32,767.",
         "The float data type is used to store floating-point values (numbers with decimal points) with a single precision.",
@@ -22,7 +25,7 @@ void datatypeKeywords() {
         "The char data type is used to store a single character. It can store a single ASCII character in the range of 0 to 127.",
         "The void data type is used to indicate that a function does not return a value."
     };
-
+    //Displaying menu
     printf("\n--- Data Type Keywords ---\n");
     printf("1. int\n");
     printf("2. float\n");
@@ -30,11 +33,12 @@ void datatypeKeywords() {
     printf("4. char\n");
     printf("5. void\n");
     printf("\nChoose a keyword: ");
-    scanf("%d", &keywordChoice);
+    scanf("%d", &keywordChoice);  //scan for user choice
 
     printf("\nDefinition of %s:\n%s\n", keywords[keywordChoice - 1], definitions[keywordChoice - 1]);
-}
+}                                          // ^ this populates the keyword and ^definition the user selected
 
+//Qualifiers - everything else within the function is the same as the function above so I won't repeat the comments in the other functions
 void qualifierKeywords() {
     int keywordChoice;
     char *keywords[] = {
@@ -58,6 +62,7 @@ void qualifierKeywords() {
     printf("\nDefinition of %s:\n%s\n", keywords[keywordChoice - 1], definitions[keywordChoice - 1]);
 }
 
+//Loops
 void loopKeywords() {
     int keywordChoice;
     char *keywords[] = {
@@ -67,6 +72,7 @@ void loopKeywords() {
         "continue",
         "break"
     };
+
     char *definitions[] = {
         "The for loop is a control structure that executes a set of instructions a specified number of times. It uses a counter variable, an end condition, and an increment or decrement statement.",
         "The while loop is a control structure that repeatedly executes a set of instructions while a specified condition is true. It tests the condition before executing the loop.",
@@ -87,6 +93,7 @@ void loopKeywords() {
     printf("\nDefinition of %s:\n%s\n", keywords[keywordChoice - 1], definitions[keywordChoice - 1]);
 }
 
+//Jump control
 void jumpingControlKeywords() {
     int keywordChoice;
     char *keywords[] = {
@@ -146,12 +153,12 @@ int main() {
                 printf("Invalid choice. Please try again.\n");
         }
 
-        if (choice != 5) {
+        if (choice != 5) {  //this keeps the loop running as long as the user doesn't select option 5, which will end the program
 
             printf("\nPress enter to return to the main menu...");
             getchar();
             getchar();
-            clrscr();
+            clrscr();    //this clears the screen before restarting the loop
 
         }
     } while (choice != 5);
