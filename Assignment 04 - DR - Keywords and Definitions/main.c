@@ -15,19 +15,17 @@ void datatypeKeywords() {
     int keywordChoice;
     //Keywords list
     char *keywords[] = {
-        "int",
-        "float",
-        "double",
-        "char",
-        "void"
+        "  int",
+        "  float",
+        "  double",
+        "  char",
     };
     //Definitions linked with keywords
     char *definitions[] = {
-        "The int data type is used to store integer values (whole numbers) in the range of -32,768 to 32,767.",
-        "The float data type is used to store floating-point values (numbers with decimal points) with a single precision.",
-        "The double data type is used to store floating-point values with double precision.",
-        "The char data type is used to store a single character. It can store a single ASCII character in the range of 0 to 127.",
-        "The void data type is used to indicate that a function does not return a value."
+        "\tSpecifies the integer type of value a variable will hold.",
+        "\tSpecifies the character type of value a variable will hold.",
+        "\tSpecifies the single-precision floating-point of value a variable will hold.",
+        "\tSpecifies the double-precision floating-point type of value a variable will.",
     };
     //Displaying menu
     printf("\n--- Data Type Keywords ---\n");
@@ -35,7 +33,6 @@ void datatypeKeywords() {
     printf("2. float\n");
     printf("3. double\n");
     printf("4. char\n");
-    printf("5. void\n");
     printf("\nChoose a keyword: ");
     scanf("%d", &keywordChoice);  //scan for user choice
 
@@ -46,22 +43,23 @@ void datatypeKeywords() {
 void qualifierKeywords() {
     int keywordChoice;
     char *keywords[] = {
-        "signed",
-        "unsigned",
-        "short",
-        "long"
+        "  signed",
+        "  unsigned",
+        "  short",
+        "  long"
     };
     char *definitions[] = {
-        "Specifies a variable can hold positive and negative integer type of data.",
-        "Specifies a variable can hold only the positive integer type of data.",
-        "Specifies a variable can hold fairly small integer type of data.",
-        "Specifies a variable can hold fairly large integer type of data.",
+        "\tSpecifies a variable can hold positive and negative integer type of data.",
+        "\tSpecifies a variable can hold only the positive integer type of data.",
+        "\tSpecifies a variable can hold fairly small integer type of data.",
+        "\tSpecifies a variable can hold fairly large integer type of data.",
     };
 
     printf("\n--- Qualifier Keywords ---\n");
-    printf("1. const\n");
-    printf("2. volatile\n");
-    printf("3. register\n");
+    printf("1. signed\n");
+    printf("2. unsigned\n");
+    printf("3. short\n");
+    printf("4. long\n");
     printf("\nChoose a keyword: ");
     scanf("%d", &keywordChoice);
 
@@ -72,27 +70,21 @@ void qualifierKeywords() {
 void loopKeywords() {
     int keywordChoice;
     char *keywords[] = {
-        "for",
-        "while",
-        "do-while",
-        "continue",
-        "break"
+        "  for",
+        "  while",
+        "  do",
     };
 
     char *definitions[] = {
-        "The for loop is a control structure that executes a set of instructions a specified number of times. It uses a counter variable, an end condition, and an increment or decrement statement.",
-        "The while loop is a control structure that repeatedly executes a set of instructions while a specified condition is true. It tests the condition before executing the loop.",
-        "The do-while loop is similar to the while loop, but it tests the condition after executing the loop. This means that the loop will always be executed at least once.",
-        "The continue statement skips the current iteration of a loop and continues with the next iteration.",
-        "The break statement is used to exit a loop early, before the specified end condition is met."
+        "\tLoop is used when the number of passes is known in advance.",
+        "\tLoop is used when the number of passes is not known in advance.",
+        "\tLoop is used to handle menu-driven programs.",
     };
 
     printf("\n--- Loop Control Structure Keywords ---\n");
     printf("1. for\n");
     printf("2. while\n");
-    printf("3. do-while\n");
-    printf("4. continue\n");
-    printf("5. break\n");
+    printf("3. do\n");
     printf("\nChoose a keyword: ");
     scanf("%d", &keywordChoice);
 
@@ -103,23 +95,20 @@ void loopKeywords() {
 void jumpingControlKeywords() {
     int keywordChoice;
     char *keywords[] = {
-        "goto",
-        "break",
-        "continue",
-        "return"
+        "  goto",
+        "  break",
+        "  continue",
     };
     char *definitions[] = {
-        "The goto keyword is used to transfer control to a labeled statement, anywhere within the same function.",
-        "The break keyword is used to exit a loop or switch statement, transferring control to the next statement following the loop or switch.",
-        "The continue keyword is used to skip the current iteration of a loop, and continue with the next iteration.",
-        "The return keyword is used to return control and an optional value from a function to its caller."
+        "\tUsed to take the control to required place in the program.",
+        "\tUsed to force immediate termination of a loop, bypassing the conditional expression and any remaining code in the body of the loop.",
+        "\tUsed to take the control to the beginning of the loop bypassing the statements inside the loop.",
     };
 
     printf("\n--- Jumping Control Keywords ---\n");
     printf("1. goto\n");
     printf("2. break\n");
-    printf("3. continue\n");
-    printf("4. return\n");
+    printf("3. continue\n");;
     printf("\nChoose a keyword: ");
     scanf("%d", &keywordChoice);
 
