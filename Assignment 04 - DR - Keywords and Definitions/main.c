@@ -1,5 +1,9 @@
 #include <stdio.h> 
 #include <string.h>
+//Author: Danny R
+//Date: 2/10/2023
+//Purpose: A menu system to read keywords and definitions
+
 
 void clrscr() {
     //Clears screen using terminal commands
@@ -42,14 +46,16 @@ void datatypeKeywords() {
 void qualifierKeywords() {
     int keywordChoice;
     char *keywords[] = {
-        "const",
-        "volatile",
-        "register"
+        "signed",
+        "unsigned",
+        "short",
+        "long"
     };
     char *definitions[] = {
-        "The const keyword is used to declare a constant value, which cannot be modified once assigned.",
-        "The volatile keyword is used to indicate that a variable may change at any time, even if the program does not change it.",
-        "The register keyword is used to declare a variable that should be stored in a register instead of memory."
+        "Specifies a variable can hold positive and negative integer type of data.",
+        "Specifies a variable can hold only the positive integer type of data.",
+        "Specifies a variable can hold fairly small integer type of data.",
+        "Specifies a variable can hold fairly large integer type of data.",
     };
 
     printf("\n--- Qualifier Keywords ---\n");
