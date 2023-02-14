@@ -15,10 +15,10 @@ void datatypeKeywords() {
     int keywordChoice;
     //Keywords list
     char *keywords[] = {
-        "  int",
-        "  float",
-        "  double",
-        "  char",
+        "int",
+        "float",
+        "double",
+        "char",
     };
     //Definitions linked with keywords
     char *definitions[] = {
@@ -43,10 +43,10 @@ void datatypeKeywords() {
 void qualifierKeywords() {
     int keywordChoice;
     char *keywords[] = {
-        "  signed",
-        "  unsigned",
-        "  short",
-        "  long"
+        "signed",
+        "unsigned",
+        "short",
+        "long"
     };
     char *definitions[] = {
         "\tSpecifies a variable can hold positive and negative integer type of data.",
@@ -70,9 +70,9 @@ void qualifierKeywords() {
 void loopKeywords() {
     int keywordChoice;
     char *keywords[] = {
-        "  for",
-        "  while",
-        "  do",
+        "for",
+        "while",
+        "do",
     };
 
     char *definitions[] = {
@@ -95,9 +95,9 @@ void loopKeywords() {
 void jumpingControlKeywords() {
     int keywordChoice;
     char *keywords[] = {
-        "  goto",
-        "  break",
-        "  continue",
+        "goto",
+        "break",
+        "continue",
     };
     char *definitions[] = {
         "\tUsed to take the control to required place in the program.",
