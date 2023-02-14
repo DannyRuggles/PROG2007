@@ -37,7 +37,7 @@ void datatypeKeywords() {
     scanf("%d", &keywordChoice);  //scan for user choice
 
     printf("\nDefinition of %s:\n%s\n", keywords[keywordChoice - 1], definitions[keywordChoice - 1]);
-}                                          // ^ this populates the keyword and ^definition the user selected
+}                                          // ^ this populates the keyword and ^definition the user selected with a -1 to correct for the array that starts at 0
 
 //Qualifiers - everything else within the function is the same as the function above so I won't repeat the comments in the other functions
 void qualifierKeywords() {
