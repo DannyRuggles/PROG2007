@@ -1,0 +1,20 @@
+A05 Questions:
+
+1. What is the difference between #include <sqlite3.h> and #include "sqlite3.h" ?
+
+#include <sqlite3.h> will look for the header file in the standard system include directories, such as /usr/include or /usr/local/include.
+
+#include "sqlite3.h" is used to include a header file from the current directory or a user-defined directory. The system will first look in the current directory, and if it doesn't find the file there, it will look in the directories specified in the include path (if any).
+
+
+2. What is a static library?
+
+A static library is a collection of object files that are linked with an application at compile time to create a single executable (.exe) file. The code in a static library is compiled into the executable file and becomes a part of it. This means that the size of the executable file is larger, but it also means that the application can be run on any machine without requiring the library to be present.
+
+3.1 What is a dynamic link library in Windows? 
+
+A dynamic link library (DLL) is a library that is loaded into memory at runtime and can be shared by multiple programs. They allow for code reuse and can reduce the size of executables.
+
+3.2 What or is there an equivalent in Linux? 
+
+In Linux, the equivalent of a DLL is a shared object (SO) file. Like DLLs, shared objects are loaded into memory at runtime and can be shared by multiple programs. And similar to DLL's, they allow for code to be reused and can also reduce the size of executables.
