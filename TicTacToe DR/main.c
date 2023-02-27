@@ -200,6 +200,10 @@ int main() {
             {
             goto start;
             }
+        if(ply=='Q'||ply=='q')
+            {
+            exitgame();
+            }
         else
             {
             goto menu;
