@@ -193,9 +193,10 @@ int main() {
     printf("%s: %d wins, %d losses\n", player1.name, player1.wins, player1.losses);
     printf("%s: %d wins, %d losses\n", player2.name, player2.wins, player2.losses);
     printf("To play again press Y .. Press any key to return to the Menu.\n\n");
-    scanf("%s", &ply);
+    getchar();
+    scanf("%c", &ply);
 
-        if(ply=="Y"||ply=="y")
+        if(ply=='Y'||ply=='y')
             {
             goto start;
             }
