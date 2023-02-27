@@ -34,6 +34,7 @@ void rules() {
     printf("\nThe game is played with 2 people, each taking turns placing their markers on the board.\n");
     printf("You place your markers by first input the row (from 1 to 3) and then input a column (from 1 to 3)\n");
     printf("You can also input your move in one input. Example: '1 3' \n");
+    printf("To QUIT back to the main menu during a match, enter 9 for either your row or column selection.\n");
     printf("The goal of the game is to get a line of 3 symbols, they can be a horizontal line, a vertical line, or\n");
     printf("a diagonal line.");
     printf("\n\n Examples: \n");
@@ -174,6 +175,14 @@ int main() {
         scanf("%d", &row);
         printf("Enter column (1-3): ");
         scanf("%d", &col);
+        
+        if (row==9||col==9){
+            printf("going to main menu..");
+            getchar;
+            getchar;
+            sleep(1);
+            break;
+        }
 
                 //checks if spot is open
         if (board[row-1][col-1] != ' ') {
