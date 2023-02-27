@@ -177,7 +177,10 @@ int main() {
 
                 //checks if spot is open
         if (board[row-1][col-1] != ' ') {
-            printf("That spot is already taken. Try again.\n");
+            printf("That spot is already taken. Press Enter to try again.\n");
+            getchar();
+            getchar();
+            system("cls");
             continue;
         }
                 //checks for winner, clears screen between turns, and updates scoreboard
