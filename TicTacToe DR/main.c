@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include "snake.c"
 /*
 Author: Danny Ruggles
 Date: 2/11/2023
@@ -135,6 +136,14 @@ int main() {
             goto menu;
         case 4:             // Main menu exit function
             exitgame();
+        case 5:
+            system("cls");
+            printf("OH, you found the secret option, congrats!\nWell then...");
+            sleep(1);
+            printf("\nLet's play snake!");
+            sleep(1);
+            snakegame();
+            continue;
         default:
             printf("Invalid choice. Please Enter to try again.\n");
             getchar();
