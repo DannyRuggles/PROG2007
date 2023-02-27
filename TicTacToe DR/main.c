@@ -6,6 +6,7 @@ Author: Danny Ruggles
 Date: 2/11/2023
 Purpose: Tic-Tac-Toe game to be played by 2 people, with a main menu and high scores
 Notes: This program is a bit of a mess, sorry about that. I tried to rework what I'd already done to fit the updated requirements, but it's not the cleanest.
+UPDATE 2/27/2023: I added in a snake game which is option 5 in the main menu. I've also parsed a lot of the code into functions to make it more modular. 
 */
 
 // Exit game function
@@ -136,13 +137,13 @@ int main() {
             goto menu;
         case 4:             // Main menu exit function
             exitgame();
-        case 5:
+        case 5:             // Snake game. Launches the snake.c file
             system("cls");
             printf("OH, you found the secret option, congrats!\nWell then...");
             sleep(1);
             printf("\nLet's play snake!");
             sleep(1);
-            snakegame();
+            snakegame();    // This is the main function in the snake.c file
             continue;
         default:
             printf("Invalid choice. Please Enter to try again.\n");
